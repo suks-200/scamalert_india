@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ScamAlert India</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- LIBRARIES -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo">🚨 ScamAlert India</div>
+  <input id="searchBar" placeholder="Search scam / city / platform">
+  <a href="safety.html">🛡 Stay Safe</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero" data-aos="zoom-in">
+  <h1>India’s Real Scam Awareness Platform</h1>
+  <p>Every report here is someone’s real loss. Stay alert.</p>
+</header>
+
+<!-- TRENDING -->
+<section>
+  <h2 data-aos="fade-right">🔥 Trending Scams</h2>
+  <div class="scroll" id="trending"></div>
+</section>
+
+<!-- FEED -->
+<section>
+  <h2 data-aos="fade-right">🛑 Latest Scam Reports</h2>
+  <div class="feed" id="feed"></div>
+</section>
+
+<!-- TOP 20 -->
+<section class="top">
+  <h2 data-aos="fade-up">⚠️ Top 20 Scams in India</h2>
+  <ol id="topList"></ol>
+</section>
+
+<!-- USER SUBMIT -->
+<section class="user" data-aos="fade-up">
+  <h2>📝 Report Your Scam</h2>
+  <form id="userScamForm">
+    <input placeholder="City / State" required>
+    <select>
+      <option>Job Scam</option>
+      <option>UPI Scam</option>
+      <option>Loan App Scam</option>
+      <option>OLX Scam</option>
+      <option>Other</option>
+    </select>
+    <input type="number" placeholder="Amount Lost (₹)">
+    <textarea placeholder="Explain what happened" required></textarea>
+    <input type="file" multiple>
+    <button>Submit (Demo)</button>
+  </form>
+</section>
+
+<!-- ASK HELP -->
+<section class="help" data-aos="zoom-in">
+  <h2>❓ What Should I Do Now?</h2>
+  <textarea id="userQuestion" placeholder="Example: I lost ₹20,000 in UPI scam"></textarea>
+  <button onclick="answerQuestion()">Get Guidance</button>
+  <div id="answerBox"></div>
+</section>
+<section class="official" data-aos="fade-up">
+<h2>🏛️ Official Scam Reporting & Help Links (India)</h2>
+<p class="sub">
+Use these verified government & official platforms to report scams,
+block accounts, and get immediate help.
+</p>
+
+
+<div class="official-grid" id="officialLinks"></div>
+</section>
+
+<footer>
+  <p>⚠️ Awareness only | Cyber Crime Helpline: 1930</p>
+</footer>
+
+<script src="data.js"></script>
+
+
+<!-- MODULE SCRIPT -->
+<script type="module" src="script.js"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>
